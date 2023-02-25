@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+header{
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+}
+header figure img{
+    float: left;
+    width: 20%;
+    height: 50%;
+}
+header figure{
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 30s slider infinite alternate-reverse;
+}
+@keyframes slider{
+    0%{left: 0%;}
+    20%{left: -100%;}
+    25%{left: -100%;}
+    45%{left: -200;}
+    50%{left: -200;}
+    70%{left: -300;}
+    75%{left: -300%;}
+    90%{left: -400;}
+    95%{left: -400;}
+}
+nav{
+    height: 100px;
+    background-color: black;
+    text-align: center;
+    position:sticky;
+    margin: 0;
+    top: 0;
+    z-index: 2;
+}
+nav li{
+    display: inline;
+    line-height: 100px;
+    padding: 30px;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+nav a{
+     color: white;
+    text-decoration: none;
+}
+.sekcja1, .sekcja2, .sekcja3{
+    background-color: lightgrey;
+}
+.sekcja1 h2, .sekcja2 h2, .sekcja3 h2{
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-top: 110px;
+    padding-bottom:20px ;
+    font-size: 1.9em ;
+    font-family: 'Dancing Script', cursive;
+}
+.sekcja1 p, .sekcja2 p, .sekcja3 p{
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-top: 20px;
+    padding-bottom:20px ;
+    font-size: 1.4em;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+.obrazy{
+    text-align: center;
+}
+.obraz1{
+    transition: 1s ease;
+    border: 7px black solid;
+    border-radius: 20px;
+}
+.obraz2{
+    transition: 1s ease;
+    border: 7px black solid;
+    border-radius: 20px;;
+}
+.obraz3{
+    transition: 1s ease;
+    border: 7px black solid;
+    border-radius: 20px;
+}
+.obraz4{
+    transition: 1s ease;
+    border: 7px black solid;
+    border-radius: 20px;
+}
+.obraz1:hover{
+    filter:saturate(300%);
+    border-radius: 100%;
+    transform: rotate(360deg);
+}
+.obraz2:hover{
+    filter:saturate(300%);
+    border-radius: 100%;
+    transform: rotate(360deg);
+
+}
+.obraz3:hover{
+    filter:saturate(300%);
+    border-radius: 100%;
+    transform: rotate(-360deg);
+}
+.obraz4:hover{
+    filter:saturate(300%);
+    border-radius: 100%;
+    transform: rotate(-360deg);
+}
+footer{
+    height: 100px;
+    background-color: black;
+}
+.middle{
+    text-align: center;
+}
+.middle img{
+    width: 50px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+#parallax1{
+    height:60vh;
+    width:100%;
+    background-image:url("../img/panda2.jpg");
+    background-size:cover;
+    display:table;
+    background-attachment:fixed;
+}
+#parallax2{
+    height:60vh;
+    width:100%;
+    background-image:url("../img/wielka1.jpg");
+    background-size:cover;
+    display:table;
+    background-attachment:fixed;
+}
+#parallax3{
+    height:60vh;
+    width:100%;
+    background-image:url("../img/panda1.jpg");
+    background-size:cover;
+    display:table;
+    background-attachment:fixed;
+}
+@media(max-width:650px)
+{
+    nav li{
+        font-size:1.1em;
+        padding: 15px;
+    }
+    .sekcja1 h2, .sekcja2 h2, .sekcja3 h2{
+        font-size: 1.1em;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .sekcja1 p, .sekcja2 p, .sekcja3 p{
+        font-size: 1.1em;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .obrazy img{
+        width: 200px;
+
+    }
+}
